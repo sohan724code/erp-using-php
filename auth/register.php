@@ -20,6 +20,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	$dir = "img/" . basename($avatar);
 
+
+
 	// TODO: PERFORM BASIC VALIDATION 
 	if(empty($email)||empty($username)||empty($password)||empty($about)){
 		$response["status"]= "failed";
@@ -67,7 +69,7 @@ $conn->close();
 
 // TODO: CONVERT THE RESPONSE ARRAY TO JSON FORMAT AND SEND IT TO THE CLIENT
 
-// header("Content-Type: application/json");
+// header("login.php");
 // echo json_encode($response);
 
 ?>
