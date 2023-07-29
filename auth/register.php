@@ -69,8 +69,9 @@ $conn->close();
 
 // TODO: CONVERT THE RESPONSE ARRAY TO JSON FORMAT AND SEND IT TO THE CLIENT
 
-// header("login.php");
-// echo json_encode($response);
+header("login.php");
+// header("Content-Type: application/json");
+echo json_encode($response);
 
 ?>
 
