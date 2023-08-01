@@ -33,8 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           // TODO:Verify the hashed password using password_verify() function
           if (password_verify($password, $user['password'])) {
               $response["status"] = "success";
-              $response["message"] = "Login successful";
-              // TODO:You can include additional user data in the response if needed
+              $response["message"] = "Login successful";     
               $response["user"] = $user;
           } else {
               $response["status"] = "failed";
